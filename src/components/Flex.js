@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const StyledFlex = styled.div``;
 
 const Flex = (props) => {
     const {
         alignItems,
+        as,
         children,
         display,
         flex,
@@ -16,7 +20,8 @@ const Flex = (props) => {
     } = props;
 
     return (
-        <div
+        <StyledFlex
+            as={as}
             style={{
                 alignItems: alignItems || 'stretch',
                 display,
@@ -30,12 +35,13 @@ const Flex = (props) => {
             }}
         >
             {children}
-        </div>
+        </StyledFlex>
     );
 };
 
 Flex.propTypes = {
     alignItems: PropTypes.string,
+    as: PropTypes.string,
     children: PropTypes.node,
     display: PropTypes.string,
     flex: PropTypes.string,
@@ -49,6 +55,7 @@ Flex.propTypes = {
 
 Flex.defaultProps = {
     alignItems: 'center',
+    as: 'div',
     children: undefined,
     display: 'flex',
     flex: '0 1 auto',

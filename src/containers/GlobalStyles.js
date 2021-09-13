@@ -24,6 +24,8 @@ const GlobalStyles = createGlobalStyle`
     --font-weight-bold: 500;
     --gradient-primary: linear-gradient(to right, var(--color-purple), var(--color-violet));
     --gradient-secondary: linear-gradient(to right, var(--color-purple) 70%, var(--color-violet));
+    --heading-xl-font-size: var(--font-size-xl);
+    --heading-xl-line-height: 2.75rem;
     --transition-speed-default: 200ms ease-out;
   }
 

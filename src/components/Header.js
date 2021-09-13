@@ -8,18 +8,16 @@ const Header = (props) => {
     const { handleToggleTheme, theme } = props;
 
     return (
-        <header>
-            <Flex padding="1rem 2rem" justifyContent="space-between">
-                <TextLink href="/">Bed Loops</TextLink>
-                <Flex>
-                    <TextLink href="https://github.com/chrisschnaars/Bed-Loops" target="_blank">
-                        Github
-                    </TextLink>
-                    <Flex width="24px" />
-                    <ModeToggle handleClick={handleToggleTheme} theme={theme} />
-                </Flex>
+        <Flex as="header" padding="1rem 2rem" justifyContent="space-between">
+            <TextLink href="/">Bed Loops</TextLink>
+            <Flex>
+                <TextLink href="https://github.com/chrisschnaars/Bed-Loops" target="_blank">
+                    Github
+                </TextLink>
+                <Flex width="24px" />
+                <ModeToggle handleClick={handleToggleTheme} theme={theme} />
             </Flex>
-        </header>
+        </Flex>
     );
 };
 

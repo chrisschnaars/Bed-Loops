@@ -12,6 +12,7 @@ const StyledLink = styled.a`
 
     &:hover {
         text-decoration: underline;
+        text-underline-offset: 0.1rem;
     }
 `;
 

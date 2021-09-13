@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import loopData from '../data/loopData';
 import Button from './Button';
 import Flex from './Flex';
+import Heading from './Heading';
 import LoopBar from './LoopBar';
-
-const Heading = styled.h1`
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
-    line-height: 2.75rem;
-`;
 
 const LoopList = () => {
     const [activeTrack, setActiveTrack] = useState();
@@ -35,7 +29,7 @@ const LoopList = () => {
     return (
         <main>
             <Flex justifyContent="space-between" margin="0 0 2rem 0">
-                <Heading>Short Seamless Loops</Heading>
+                <Heading level={1}>Short Seamless Loops</Heading>
                 <Button>Download All</Button>
             </Flex>
             {loopData.map((song, index) => (
