@@ -12,7 +12,7 @@ const Header = (props) => {
             <Flex padding="1rem 2rem" justifyContent="space-between">
                 <TextLink href="/">Bed Loops</TextLink>
                 <Flex>
-                    <TextLink href="/" target="_blank">
+                    <TextLink href="https://github.com/chrisschnaars/Bed-Loops" target="_blank">
                         Github
                     </TextLink>
                     <Flex width="24px" />
